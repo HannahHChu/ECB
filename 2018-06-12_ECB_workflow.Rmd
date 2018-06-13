@@ -1,0 +1,38 @@
+---
+title: "ECB Project"
+output: 
+  html_notebook: 
+    toc: yes
+---
+# Library
+```{r}
+library(DiagrammeR)
+```
+
+# Setup
+* 5 Cohorts:
+  * 10 female UZ individuals - 5 RT & 5 SO
+  * 10 female BE individuals - 5 RT & 5 SO
+  * 10 male UZ individuals - 5 RT & 5 SO
+  * 10 male BE individuals - 5 RT & 5 SO
+
+# Overall Workflow
+
+![ECB Workflow](https://github.com/HannahHChu/Notebooks/blob/master/Images/ECBworkflow.png)
+
+```{r}
+mermaid("
+  graph TD
+  A[Cohort Day] --separate eggs--> B[SO diapause]
+  A --separate eggs--> C[RT direct development]
+  B --5 females UZ & BE and 5 males UZ & BE--> D[46 days, 23ºC, 12L:12D until pupation]
+  C --5 females UZ & BE and 5 males UZ & BE--> E[46 days, 23ºC, 16L:8D]
+  E --transfer--> F[Diapause termination: 26ºC, 16L:8D until pupation]
+  F --eclosion--> G[move adults to Trikinetics in Free Run conditions]
+  D --> E")
+```
+
+# Session Info
+```{r}
+sessionInfo()
+```
