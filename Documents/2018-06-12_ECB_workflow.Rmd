@@ -1,8 +1,15 @@
 ---
-title: "ECB Project"
-output: 
-  html_notebook: 
+title: "ECB Biological rhythms &  timing of protein-protein interactions Project"
+author: "Hannah Chu"
+date: "2018-06-15"
+output:
+  prettydoc::html_pretty:
+    theme: cayman
     toc: yes
+  pdf_document:
+    number_sections: yes
+    toc: yes
+fontsize: 18pt
 ---
 # Library
 ```{r}
@@ -17,8 +24,6 @@ library(DiagrammeR)
   * 10 male BE individuals - 5 RT & 5 SO
 
 # Overall Workflow
-
-![ECB Workflow](https://github.com/HannahHChu/Notebooks/blob/master/Images/ECBworkflow.png)
 
 ```{r}
 mermaid("

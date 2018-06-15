@@ -1,19 +1,6 @@
 # ECB Biological rhythms &  timing of protein-protein interactions Project
 
 ---
-title: ECB Biological rhythms &  timing of protein-protein interactions Project
-author: 
-date: 2018-06-15
-output:
-  prettydoc::html_pretty:
-    theme: hpstr
-    toc: yes
-  pdf_document:
-    number_sections: yes
-    toc: yes
-fontsize: 18pt
-
----
 # Repository Layout
 
 **Data/:**
